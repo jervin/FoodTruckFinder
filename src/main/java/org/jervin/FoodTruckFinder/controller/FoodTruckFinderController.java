@@ -8,14 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class FoodTruckFinderController {
 
     @GetMapping("/foodtruckfinder")
-    public List<FoodTruck> findTrucks(@RequestParam(name="lat", required=true) int latitude,
-                                @RequestParam(name="long", required=true) int longitude) throws IOException {
-        List<FoodTruck> trucks = new CSVReader().readInData();
-        return trucks;
+    public List<FoodTruck> findTrucks(@RequestParam(name="lat", required=true) double latitude,
+                                      @RequestParam(name="long", required=true) double longitude,
+                                      @RequestParam(name="foodType", defaultValue = "") String foodItems,
+                                      @RequestParam(name="mi", defaultValue = "1.0") double distance) throws IOException {
+        List<FoodTruck> trucks = new CSVReader().getTrucks();
+        return trucks.stream()
+                .filter(truck -> DistanceCalculator.distance(latitude, longitude, truck.getLatitude(), truck.getLongitude()) <= distance )
+                .filter(truck -> truck.getFoodItems().toLowerCase().contains(foodItems.toLowerCase()))
+                .collect(Collectors.toList());
     }
 }

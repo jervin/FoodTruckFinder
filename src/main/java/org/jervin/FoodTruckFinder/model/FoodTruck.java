@@ -9,14 +9,16 @@ public class FoodTruck {
     private final String applicant;
     private final String locationDescription;
     private final String address;
+    private final String foodItems;
 
-    public FoodTruck(long locationID, double latitude, double longitude, String applicant, String locationDescription, String address) {
+    public FoodTruck(long locationID, double latitude, double longitude, String applicant, String locationDescription, String address, String foodItems) {
         this.locationID = locationID;
         this.latitude = latitude;
         this.longitude = longitude;
         this.applicant = applicant;
         this.locationDescription = locationDescription;
         this.address = address;
+        this.foodItems = foodItems;
     }
 
     public long getLocationID() { return locationID; }
@@ -25,6 +27,7 @@ public class FoodTruck {
     public String getApplicant() { return applicant; }
     public String getLocationDescription() { return locationDescription; }
     public String getAddress() { return address; }
+    public String getFoodItems() { return foodItems; }
 
     @Override
     public boolean equals(Object o) {
@@ -36,11 +39,12 @@ public class FoodTruck {
                 longitude == foodTruck.longitude &&
                 applicant.equals(foodTruck.applicant) &&
                 locationDescription.equals(foodTruck.locationDescription) &&
-                address.equals(foodTruck.address);
+                address.equals(foodTruck.address) &&
+                foodItems.equals(foodTruck.foodItems);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(locationID, latitude, longitude, applicant, locationDescription, address);
+        return Objects.hash(locationID, latitude, longitude, applicant, locationDescription, address, foodItems);
     }
     @Override
     public String toString() {
@@ -51,6 +55,7 @@ public class FoodTruck {
                 ", applicant='" + applicant + '\'' +
                 ", locationDescription='" + locationDescription + '\'' +
                 ", address='" + address + '\'' +
+                ", foodItems='" + foodItems + '\'' +
                 '}';
     }
 }

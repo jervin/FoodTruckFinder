@@ -8,10 +8,9 @@ import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class CSVReader {
-    public List<FoodTruck> readInData() throws IOException {
+    public List<FoodTruck> getTrucks() throws IOException {
         URL url = CSVReader.class.getClassLoader().getResource("Mobile_Food_Facility_Permit.csv");
         List<FoodTruck> trucks = new ArrayList<>();
         Iterable<CSVRecord> iterable = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(new InputStreamReader(url.openStream()));
@@ -21,7 +20,8 @@ public class CSVReader {
                     Double.parseDouble(record.get(FoodTruckHeaderKeys.LONGITUDE)),
                     record.get(FoodTruckHeaderKeys.APPLICANT),
                     record.get(FoodTruckHeaderKeys.LOCATION_DESCRIPTION),
-                    record.get(FoodTruckHeaderKeys.ADDRESS));
+                    record.get(FoodTruckHeaderKeys.ADDRESS),
+                    record.get(FoodTruckHeaderKeys.FOODITEMS));
             trucks.add(foodTruck);
         }
         return trucks;
