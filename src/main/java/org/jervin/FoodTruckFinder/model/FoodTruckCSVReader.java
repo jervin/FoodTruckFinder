@@ -2,6 +2,8 @@ package org.jervin.FoodTruckFinder.model;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.net.*;
@@ -9,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FoodTruckCSVReader {
+    private static final Logger logger = LoggerFactory.getLogger(FoodTruckCSVReader.class);
+
 
     protected List<FoodTruck> getTrucksFromURL(final URL url) throws IOException {
         List<FoodTruck> trucks = new ArrayList<>();
@@ -37,7 +41,7 @@ public class FoodTruckCSVReader {
         try {
             return getTrucksFromURL(url);
         } catch (IOException e) {
-            // TODO: Log this
+            logger.error("Cannot access embedded Mobile_Food_Facility_Permit.csv", e);
             throw new RuntimeException(e);  // We really should not see this broken.
         }
     }
@@ -51,9 +55,7 @@ public class FoodTruckCSVReader {
             cached = getTrucksFromSF();
             return new ArrayList<>(cached);
         } catch(IOException ioe) {
-            // TODO: Log this
-            System.out.println("Error: " + ioe);
-            ioe.printStackTrace();
+            logger.error("Could not access the SF Gov web site to get the latest CSV", ioe);
         }
         // Not caching this value, since it is the fallback embedded CSV.
         return getTrucksFromEmbeddedCSV();
