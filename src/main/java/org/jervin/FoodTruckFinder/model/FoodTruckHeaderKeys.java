@@ -7,7 +7,8 @@ public enum FoodTruckHeaderKeys {
     ADDRESS("Address"),
     LATITUDE("Latitude"),
     LONGITUDE("Longitude"),
-    FOODITEMS("FoodItems");
+    FOODITEMS("FoodItems"),
+    HOURS_OF_OPERATION("dayshours");
 
 
     private final String description;

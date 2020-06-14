@@ -21,7 +21,8 @@ public class CSVReader {
                     record.get(FoodTruckHeaderKeys.APPLICANT),
                     record.get(FoodTruckHeaderKeys.LOCATION_DESCRIPTION),
                     record.get(FoodTruckHeaderKeys.ADDRESS),
-                    record.get(FoodTruckHeaderKeys.FOODITEMS));
+                    record.get(FoodTruckHeaderKeys.FOODITEMS),
+                    record.get(FoodTruckHeaderKeys.HOURS_OF_OPERATION));
             trucks.add(foodTruck);
         }
         return trucks;

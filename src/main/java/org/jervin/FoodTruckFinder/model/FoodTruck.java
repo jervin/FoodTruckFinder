@@ -10,8 +10,16 @@ public class FoodTruck {
     private final String locationDescription;
     private final String address;
     private final String foodItems;
+    private final String hoursOfOperation;
 
-    public FoodTruck(long locationID, double latitude, double longitude, String applicant, String locationDescription, String address, String foodItems) {
+    public FoodTruck(long locationID,
+                     double latitude,
+                     double longitude,
+                     String applicant,
+                     String locationDescription,
+                     String address,
+                     String foodItems,
+                     String hoursOfOperation) {
         this.locationID = locationID;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -19,6 +27,7 @@ public class FoodTruck {
         this.locationDescription = locationDescription;
         this.address = address;
         this.foodItems = foodItems;
+        this.hoursOfOperation = hoursOfOperation;
     }
 
     public long getLocationID() { return locationID; }
@@ -28,6 +37,7 @@ public class FoodTruck {
     public String getLocationDescription() { return locationDescription; }
     public String getAddress() { return address; }
     public String getFoodItems() { return foodItems; }
+    public String getHoursOfOperation() { return hoursOfOperation; }
 
     @Override
     public boolean equals(Object o) {
@@ -56,6 +66,7 @@ public class FoodTruck {
                 ", locationDescription='" + locationDescription + '\'' +
                 ", address='" + address + '\'' +
                 ", foodItems='" + foodItems + '\'' +
+                ", hoursOfOperation='" + hoursOfOperation + '\'' +
                 '}';
     }
 }
