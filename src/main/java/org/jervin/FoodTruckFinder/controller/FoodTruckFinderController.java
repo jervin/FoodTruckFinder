@@ -1,6 +1,5 @@
 package org.jervin.FoodTruckFinder.controller;
 
-import org.jervin.FoodTruckFinder.model.CSVReader;
 import org.jervin.FoodTruckFinder.model.FoodTruck;
 import org.jervin.FoodTruckFinder.model.FoodTruckFinder;
 import org.slf4j.Logger;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 public class FoodTruckFinderController {
