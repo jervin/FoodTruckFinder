@@ -19,7 +19,7 @@ public class FoodTruckFinderController {
     public List<FoodTruck> findTrucks(@RequestParam(name="lat", required=true) double latitude,
                                       @RequestParam(name="long", required=true) double longitude,
                                       @RequestParam(name="foodType", defaultValue = "") String foodItems,
-                                      @RequestParam(name="mi", defaultValue = "1.0") double distance) throws IOException {
+                                      @RequestParam(name="mi", defaultValue = "0.0") double distance) throws IOException {
         logger.info("latitude: " + latitude + ", longitude:" + longitude + ", foodType: " + foodItems + ", distance: " + distance);
         return FoodTruckFinder.findTrucks(latitude, longitude, foodItems, distance);
     }
