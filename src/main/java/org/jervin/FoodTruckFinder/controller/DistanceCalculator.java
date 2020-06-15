@@ -6,6 +6,9 @@ public class DistanceCalculator {
      *  as specified by the two lats and longs, in miles.  Haversine assumes that the Earth is
      *  a perfect sphere, but given we are talking about walking distances to find Food Trucks, the difference
      *  between that and a more accurate Spheroid will not be significant.
+     *
+     *  Algorithm acquired from: https://www.geeksforgeeks.org/haversine-formula-to-find-distance-between-two-points-on-a-sphere/
+     *
      * @param lat1
      * @param lon1
      * @param lat2
