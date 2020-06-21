@@ -32,6 +32,7 @@ public class FoodTruckFinder implements IFoodTruckFinder {
         if (distance > 0.0d) {
             // We have specified a distance, so we are going to filter based on it.
             return trucks.stream()
+                    .filter(truck -> truck.getLatitude() != 0.0 && truck.getLongitude() != 0.0)
                     .filter(truck -> DistanceCalculator.distance(latitude, longitude, truck.getLatitude(), truck.getLongitude()) <= distance)
                     .filter(truck -> truck.getFoodItems().toLowerCase().contains(foodItems.toLowerCase()))
                     .sorted(comparator)
@@ -39,7 +40,8 @@ public class FoodTruckFinder implements IFoodTruckFinder {
         }
 
         return trucks.stream()
-                .filter(truck -> DistanceCalculator.distance(latitude, longitude, truck.getLatitude(), truck.getLongitude()) <= 100.0d)
+                .filter(truck -> truck.getLatitude() != 0.0 && truck.getLongitude() != 0.0)
+                .filter(truck -> DistanceCalculator.distance(latitude, longitude, truck.getLatitude(), truck.getLongitude()) <= 100.d)
                 .filter(truck -> truck.getFoodItems().toLowerCase().contains(foodItems.toLowerCase()))
                 .sorted(comparator)
                 .collect(Collectors.toList());
