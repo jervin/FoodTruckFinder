@@ -1,7 +1,9 @@
-package org.jervin.FoodTruckFinder.model;
+package org.jervin.FoodTruckFinder.dao;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.jervin.FoodTruckFinder.model.FoodTruck;
+import org.jervin.FoodTruckFinder.model.FoodTruckHeaderKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -13,28 +15,34 @@ import java.util.List;
 
 @Service
 public class FoodTruckCSVReader implements IFoodTrucksDAO {
+    public static final String SFGOV_URL = "https://data.sfgov.org/api/views/rqzj-sfat/rows.csv";
     private static final Logger logger = LoggerFactory.getLogger(FoodTruckCSVReader.class);
 
 
     protected List<FoodTruck> getTrucksFromURL(final URL url) throws IOException {
         List<FoodTruck> trucks = new ArrayList<>();
-        Iterable<CSVRecord> iterable = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(new InputStreamReader(url.openStream()));
-        for (CSVRecord record : iterable) {
-            FoodTruck foodTruck = new FoodTruck(Long.parseLong(record.get(FoodTruckHeaderKeys.LOCATION_ID)),
-                    Double.parseDouble(record.get(FoodTruckHeaderKeys.LATITUDE)),
-                    Double.parseDouble(record.get(FoodTruckHeaderKeys.LONGITUDE)),
-                    record.get(FoodTruckHeaderKeys.APPLICANT),
-                    record.get(FoodTruckHeaderKeys.LOCATION_DESCRIPTION),
-                    record.get(FoodTruckHeaderKeys.ADDRESS),
-                    record.get(FoodTruckHeaderKeys.FOODITEMS),
-                    record.get(FoodTruckHeaderKeys.HOURS_OF_OPERATION));
-            trucks.add(foodTruck);
+        final InputStream in = url.openStream();
+        try {
+            Iterable<CSVRecord> iterable = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(new InputStreamReader(in));
+            for (CSVRecord record : iterable) {
+                FoodTruck foodTruck = new FoodTruck(Long.parseLong(record.get(FoodTruckHeaderKeys.LOCATION_ID)),
+                        Double.parseDouble(record.get(FoodTruckHeaderKeys.LATITUDE)),
+                        Double.parseDouble(record.get(FoodTruckHeaderKeys.LONGITUDE)),
+                        record.get(FoodTruckHeaderKeys.APPLICANT),
+                        record.get(FoodTruckHeaderKeys.LOCATION_DESCRIPTION),
+                        record.get(FoodTruckHeaderKeys.ADDRESS),
+                        record.get(FoodTruckHeaderKeys.FOODITEMS),
+                        record.get(FoodTruckHeaderKeys.HOURS_OF_OPERATION));
+                trucks.add(foodTruck);
+            }
+            return trucks;
+        } finally {
+            in.close();
         }
-        return trucks;
     }
 
     protected List<FoodTruck> getTrucksFromSF() throws IOException {
-        URL url = new URL("https://data.sfgov.org/api/views/rqzj-sfat/rows.csv");
+        URL url = new URL(SFGOV_URL);
         return getTrucksFromURL(url);
     }
 
@@ -49,6 +57,16 @@ public class FoodTruckCSVReader implements IFoodTrucksDAO {
     }
 
     private volatile List<FoodTruck> cached = null;
+
+    @Override
+    public boolean checkHealth() {
+        try {
+            getTrucksFromURL(new URL(SFGOV_URL));
+            return true;
+        } catch (IOException ioe) {
+            return false;
+        }
+    }
 
     public List<FoodTruck> getTrucks() {
         if(cached != null && !cached.isEmpty())

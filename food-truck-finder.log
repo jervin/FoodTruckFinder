@@ -183,3 +183,151 @@
 2020-06-21 17:01:37.904  INFO 31852 --- [main] o.j.F.FoodTruckFinderApplicationTests    : Started FoodTruckFinderApplicationTests in 3.507 seconds (JVM running for 4.771)
 2020-06-21 17:01:38.307  INFO 31852 --- [main] o.j.F.c.FoodTruckFinderController        : latitude: 37.78, longitude:-122.43, foodType: , distance: 1.0
 2020-06-21 17:01:39.520  INFO 31852 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:05:59.681  INFO 29332 --- [main] o.j.F.FoodTruckFinderApplicationTests    : Starting FoodTruckFinderApplicationTests on DESKTOP-GO0BSQO with PID 29332 (started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:05:59.683  INFO 29332 --- [main] o.j.F.FoodTruckFinderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-06-21 17:06:01.826  INFO 29332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:06:02.085  WARN 29332 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:06:02.470  WARN 29332 --- [main] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:06:02.870  INFO 29332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:06:02.947  INFO 29332 --- [main] o.j.F.FoodTruckFinderApplicationTests    : Started FoodTruckFinderApplicationTests in 3.639 seconds (JVM running for 4.742)
+2020-06-21 17:06:03.184  INFO 29332 --- [main] o.j.F.c.FoodTruckFinderController        : latitude: 37.78, longitude:-122.43, foodType: , distance: 1.0
+2020-06-21 17:06:04.752  INFO 29332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:06:15.342  INFO 35620 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 35620 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:06:15.345  INFO 35620 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:06:15.491  INFO 35620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:06:15.492  INFO 35620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:06:16.752  INFO 35620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:06:16.760  INFO 35620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:06:16.761  INFO 35620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:06:16.822  INFO 35620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:06:16.823  INFO 35620 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1330 ms
+2020-06-21 17:06:17.069  INFO 35620 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:06:17.166  WARN 35620 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:06:17.258  WARN 35620 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:06:17.523  INFO 35620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:06:17.528  INFO 35620 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:06:17.562  INFO 35620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:06:17.575  INFO 35620 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 2.526 seconds (JVM running for 2.93)
+2020-06-21 17:06:43.717  INFO 35620 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:06:43.717  INFO 35620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:06:43.726  INFO 35620 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-06-21 17:38:33.792  INFO 35620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:38:46.225  INFO 27392 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 27392 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:38:46.228  INFO 27392 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:38:46.380  INFO 27392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:38:46.380  INFO 27392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:38:47.632  INFO 27392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:38:47.641  INFO 27392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:38:47.642  INFO 27392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:38:47.706  INFO 27392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:38:47.707  INFO 27392 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1326 ms
+2020-06-21 17:38:47.962  INFO 27392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:38:48.054  WARN 27392 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:38:48.140  WARN 27392 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:38:48.409  INFO 27392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:38:48.414  INFO 27392 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:38:48.448  INFO 27392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:38:48.461  INFO 27392 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 2.549 seconds (JVM running for 2.954)
+2020-06-21 17:39:13.216  INFO 27392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:39:13.216  INFO 27392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:39:13.223  INFO 27392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-06-21 17:39:19.522  INFO 27392 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:39:39.108  INFO 41976 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 41976 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:39:39.111  INFO 41976 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:39:39.259  INFO 41976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:39:39.259  INFO 41976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:39:40.537  INFO 41976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:39:40.545  INFO 41976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:39:40.546  INFO 41976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:39:40.610  INFO 41976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:39:40.611  INFO 41976 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1351 ms
+2020-06-21 17:39:40.862  INFO 41976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:39:40.957  WARN 41976 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:39:41.042  WARN 41976 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:39:41.314  INFO 41976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:39:41.319  INFO 41976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:39:41.356  INFO 41976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:39:41.371  INFO 41976 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 2.557 seconds (JVM running for 2.969)
+2020-06-21 17:39:47.850  INFO 41976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:39:47.851  INFO 41976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:39:47.857  INFO 41976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-06-21 17:40:06.042  INFO 41976 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:40:46.926  INFO 46064 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 46064 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:40:46.929  INFO 46064 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:40:47.220  INFO 46064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:40:47.221  INFO 46064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:40:49.265  INFO 46064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:40:49.279  INFO 46064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:40:49.279  INFO 46064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:40:49.412  INFO 46064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:40:49.413  INFO 46064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2192 ms
+2020-06-21 17:40:49.888  INFO 46064 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:40:50.047  WARN 46064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:40:50.223  WARN 46064 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:40:50.574  INFO 46064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:40:50.580  INFO 46064 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:40:50.631  INFO 46064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:40:50.646  INFO 46064 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 4.398 seconds (JVM running for 5.433)
+2020-06-21 17:40:56.840  INFO 46064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:40:56.841  INFO 46064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:40:56.849  INFO 46064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-06-21 17:41:16.225  INFO 46064 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:44:03.426  INFO 48748 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 48748 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:44:03.430  INFO 48748 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:44:03.724  INFO 48748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:44:03.725  INFO 48748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:44:05.667  INFO 48748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:44:05.683  INFO 48748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:44:05.684  INFO 48748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:44:05.797  INFO 48748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:44:05.798  INFO 48748 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2073 ms
+2020-06-21 17:44:06.215  INFO 48748 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:44:06.361  WARN 48748 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:44:06.491  WARN 48748 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:44:06.874  INFO 48748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:44:06.879  INFO 48748 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:44:06.936  INFO 48748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:44:06.956  INFO 48748 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 4.143 seconds (JVM running for 4.956)
+2020-06-21 17:45:01.110  INFO 48748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:45:01.112  INFO 48748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:45:01.119  INFO 48748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-06-21 17:47:27.066  INFO 48748 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:47:54.782  INFO 2888 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 2888 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:47:54.784  INFO 2888 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:47:54.932  INFO 2888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:47:54.933  INFO 2888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:47:56.312  INFO 2888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:47:56.319  INFO 2888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:47:56.319  INFO 2888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:47:56.388  INFO 2888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:47:56.389  INFO 2888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1455 ms
+2020-06-21 17:47:56.636  INFO 2888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:47:56.729  WARN 2888 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:47:56.852  WARN 2888 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:47:57.105  INFO 2888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:47:57.110  INFO 2888 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:47:57.147  INFO 2888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:47:57.160  INFO 2888 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 2.685 seconds (JVM running for 3.12)
+2020-06-21 17:48:05.179  INFO 2888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:48:05.179  INFO 2888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:48:05.184  INFO 2888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-06-21 17:48:21.506  INFO 2888 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:48:41.173  INFO 39688 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Starting FoodTruckFinderApplication on DESKTOP-GO0BSQO with PID 39688 (C:\Users\jervin\git\FoodTruckFinder\target\classes started by jervin in C:\Users\jervin\git\FoodTruckFinder)
+2020-06-21 17:48:41.175  INFO 39688 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : No active profile set, falling back to default profiles: default
+2020-06-21 17:48:41.334  INFO 39688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-21 17:48:41.334  INFO 39688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-21 17:48:42.593  INFO 39688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-21 17:48:42.602  INFO 39688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 17:48:42.602  INFO 39688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 17:48:42.686  INFO 39688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 17:48:42.687  INFO 39688 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1352 ms
+2020-06-21 17:48:42.933  INFO 39688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 17:48:43.031  WARN 39688 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-06-21 17:48:43.125  WARN 39688 --- [restartedMain] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2020-06-21 17:48:43.374  INFO 39688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-06-21 17:48:43.379  INFO 39688 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoint(s) beneath base path '/actuator'
+2020-06-21 17:48:43.414  INFO 39688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-21 17:48:43.427  INFO 39688 --- [restartedMain] o.j.F.FoodTruckFinderApplication         : Started FoodTruckFinderApplication in 2.553 seconds (JVM running for 3.0)
+2020-06-21 17:48:46.527  INFO 39688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 17:48:46.527  INFO 39688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 17:48:46.535  INFO 39688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms

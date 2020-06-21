@@ -1,6 +1,7 @@
 package org.jervin.FoodTruckFinder.model;
 
 import org.jervin.FoodTruckFinder.controller.DistanceCalculator;
+import org.jervin.FoodTruckFinder.dao.IFoodTrucksDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
