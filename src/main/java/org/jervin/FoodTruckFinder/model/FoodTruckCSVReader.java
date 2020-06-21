@@ -4,13 +4,15 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FoodTruckCSVReader {
+@Service
+public class FoodTruckCSVReader implements IFoodTrucksDAO {
     private static final Logger logger = LoggerFactory.getLogger(FoodTruckCSVReader.class);
 
 

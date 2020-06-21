@@ -10,6 +10,8 @@ import java.util.List;
 
 public class FoodTruckFinderTest {
 
+    private IFoodTruckFinder finder = new FoodTruckFinder();
+
     private List<FoodTruck> genList() throws Exception {
         List<FoodTruck> list = new ArrayList<>();
         list.add(new FoodTruck(1336165, 37.7818671175741, -122.4900712081,
@@ -30,7 +32,7 @@ public class FoodTruckFinderTest {
     @Test
     public void testFilterAndSort() throws Exception {
         List<FoodTruck> input = genList();
-        List<FoodTruck> trucks = FoodTruckFinder.filterAndSort(37.78, -122.43, "", 10.0d, input);
+        List<FoodTruck> trucks = ((FoodTruckFinder)finder).filterAndSort(37.78, -122.43, "", 10.0d, input);
         Assertions.assertEquals(1163785l, trucks.get(0).getLocationID());
         Assertions.assertEquals(1336165l, trucks.get(1).getLocationID());
     }

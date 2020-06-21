@@ -1,17 +1,22 @@
 package org.jervin.FoodTruckFinder.model;
 
 import org.jervin.FoodTruckFinder.controller.DistanceCalculator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FoodTruckFinder {
-    protected static List<FoodTruck> filterAndSort(double latitude,
-                                                   double longitude,
-                                                   String foodItems,
-                                                   double distance,
-                                                   List<FoodTruck> trucks) {
+@Service
+public class FoodTruckFinder implements IFoodTruckFinder {
+    @Autowired
+    IFoodTrucksDAO foodTrucksDAO;
+
+    public List<FoodTruck> filterAndSort(double latitude,
+                                         double longitude,
+                                         String foodItems, double distance,
+                                         List<FoodTruck> trucks) {
         final Comparator<FoodTruck> comparator = (t0, t1) -> {
             double distance0 = DistanceCalculator.distance(longitude, latitude, t0.getLongitude(), t0.getLongitude());
             double distance1 = DistanceCalculator.distance(longitude, latitude, t1.getLongitude(), t1.getLongitude());
@@ -39,11 +44,11 @@ public class FoodTruckFinder {
                 .collect(Collectors.toList());
     }
 
-    public static List<FoodTruck> findTrucks(double latitude,
-                                             double longitude,
-                                             String foodItems,
-                                             double distance) {
-        List<FoodTruck> trucks = new FoodTruckCSVReader().getTrucks();
+    public List<FoodTruck> findTrucks(double latitude,
+                                      double longitude,
+                                      String foodItems,
+                                      double distance) {
+        List<FoodTruck> trucks = foodTrucksDAO.getTrucks();
         return filterAndSort(latitude, longitude, foodItems, distance, trucks);
     }
 }

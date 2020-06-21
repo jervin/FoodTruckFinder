@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
- * TODO: 0
- * Note need more tests, walking distance calculations.
+ * TODO: Note need more tests, walking distance calculations.
  */
 public class DistanceCalculatorTest {
     @Test

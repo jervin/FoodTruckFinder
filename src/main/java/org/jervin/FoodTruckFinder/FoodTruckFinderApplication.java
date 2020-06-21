@@ -33,7 +33,7 @@ public class FoodTruckFinderApplication {
 			double longitude = Double.parseDouble(commandLine.getOptionValue("lon"));
 			String foodItems = commandLine.hasOption("foodType") ? commandLine.getOptionValue("foodType") : "";
 			double radius = commandLine.hasOption("mi") ? Double.parseDouble(commandLine.getOptionValue("mi")) : 1.0d;
-			List<FoodTruck> trucks = FoodTruckFinder.findTrucks(latitude, longitude, foodItems, radius);
+			List<FoodTruck> trucks =new FoodTruckFinder().findTrucks(latitude, longitude, foodItems, radius);
 			final ObjectMapper mapper = new ObjectMapper();
 			System.out.println(mapper.writeValueAsString(trucks));
 			System.exit(0);
