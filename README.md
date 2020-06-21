@@ -8,10 +8,14 @@ This application represents both a command line application and a web service to
 
 There are four parameters that you can pass in on the URL bar:
 http://localhost:8080/foodtruckfinder
-1. -lat (latitude) - required
-2. -lon (longitude) - required
-3. -foodType (greps the term in the FoodItems field to let you search for Chinese, Mexican food or something specific like Burritos) -optional
-4. -mi (distance from the lat/lon the trucks must be in specified in miles) - optional
+1. lat (latitude) - required
+2. lon (longitude) - required
+3. foodType (greps the term in the FoodItems field to let you search for Chinese, Mexican food or something specific like Burritos) -optional
+4. mi (distance from the lat/lon the trucks must be in specified in miles) - optional
+
+An example URL is as follows:
+http://localhost:8080/foodtruckfinder?lat=37.78&long=-122.43&mi=10&foodType=mexican
+
 
 Right now if you do not specify a distance, you get the whole list ordered closest to you.  If you specify a distance, only those trucks within range are shown.
 
