@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FoodTruckFinderTest {
@@ -30,7 +31,7 @@ public class FoodTruckFinderTest {
     }
 
     @Test
-    public void testFilterAndSort() throws Exception {
+    public void testFilterAndSortByDistance() throws Exception {
         List<FoodTruck> input = genList();
         List<FoodTruck> trucks = ((FoodTruckFinder)finder).filterAndSort(37.78, -122.43, "", 10.0d, input);
         Assertions.assertEquals(1163785l, trucks.get(0).getLocationID());

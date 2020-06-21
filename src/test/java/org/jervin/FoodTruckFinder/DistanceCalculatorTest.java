@@ -34,4 +34,5 @@ public class DistanceCalculatorTest {
 
         Assertions.assertTrue(distance2 < distance3);
     }
+
 }

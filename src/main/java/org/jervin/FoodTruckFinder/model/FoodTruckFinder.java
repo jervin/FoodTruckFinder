@@ -21,7 +21,7 @@ public class FoodTruckFinder implements IFoodTruckFinder {
             double distance0 = DistanceCalculator.distance(longitude, latitude, t0.getLongitude(), t0.getLongitude());
             double distance1 = DistanceCalculator.distance(longitude, latitude, t1.getLongitude(), t1.getLongitude());
             double diff = distance0 - distance1;
-            if (diff > 0.0)
+            if (diff < 0.0)
                 return 1;
             if (diff == 0.0)
                 return 0;
