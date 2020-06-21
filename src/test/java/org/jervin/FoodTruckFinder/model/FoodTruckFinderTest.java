@@ -34,7 +34,7 @@ public class FoodTruckFinderTest {
     public void testFilterAndSortByDistance() throws Exception {
         List<FoodTruck> input = genList();
         List<FoodTruck> trucks = ((FoodTruckFinder)finder).filterAndSort(37.78, -122.43, "", 10.0d, input);
-        Assertions.assertEquals(1163785l, trucks.get(0).getLocationID());
-        Assertions.assertEquals(1336165l, trucks.get(1).getLocationID());
+        Assertions.assertEquals(1336165l, trucks.get(0).getLocationID());
+        Assertions.assertEquals(1163785l, trucks.get(1).getLocationID());
     }
 }
