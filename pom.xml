@@ -127,6 +127,34 @@
 							</execution>
 						</executions>
 					</plugin>
+					<plugin>
+						<groupId>com.microsoft.azure</groupId>
+						<artifactId>azure-webapp-maven-plugin</artifactId>
+						<version>2.0.0</version>
+						<configuration>
+							<schemaVersion>v2</schemaVersion>
+							<subscriptionId>2a398a70-ef13-424f-803f-1f273a219e7e</subscriptionId>
+							<resourceGroup>FoodTruckFinder-1626896813660-rg</resourceGroup>
+							<appName>FoodTruckFinder-1626896813660</appName>
+							<pricingTier>P1v2</pricingTier>
+							<region>westeurope</region>
+							<runtime>
+								<os>Linux</os>
+								<javaVersion>Java 11</javaVersion>
+								<webContainer>Java SE</webContainer>
+							</runtime>
+							<deployment>
+								<resources>
+									<resource>
+										<directory>${project.basedir}/target</directory>
+										<includes>
+											<include>*.jar</include>
+										</includes>
+									</resource>
+								</resources>
+							</deployment>
+						</configuration>
+					</plugin>
 				</plugins>
 			</build>
 		</profile>
