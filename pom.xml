@@ -134,10 +134,12 @@
 						<configuration>
 							<schemaVersion>v2</schemaVersion>
 							<subscriptionId>2a398a70-ef13-424f-803f-1f273a219e7e</subscriptionId>
-							<resourceGroup>FoodTruckFinder-1626896813660-rg</resourceGroup>
-							<appName>FoodTruckFinder-1626896813660</appName>
-							<pricingTier>P1v2</pricingTier>
-							<region>westeurope</region>
+							<resourceGroup>training-resourcegroup-static-web</resourceGroup>
+							<appName>FoodTruckFinderXYZ</appName>
+							<pricingTier>B1</pricingTier>
+							<region>centralus</region>
+							<appServicePlanName>ASP-trainingresourcegroupstaticweb-8a05</appServicePlanName>
+							<appServicePlanResourceGroup>training-resourcegroup-static-web</appServicePlanResourceGroup>
 							<runtime>
 								<os>Linux</os>
 								<javaVersion>Java 11</javaVersion>
